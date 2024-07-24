@@ -26,6 +26,7 @@ def embed_model(model_name = "BAAI/bge-large-en-v1.5"):
 def Qwen():
     return DashScope(model_name=DashScopeGenerationModels.QWEN_TURBO, api_key="sk-a24c579290f74665a3653bfdc5050098")
 
+
 def Qwen2():
     QWEN_API_KEY = "sk-a24c579290f74665a3653bfdc5050098"
     # API_KEY = "37cd3e06d9754653910c7bce12ff5d61"
