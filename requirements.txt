@@ -1,0 +1,12 @@
+SQLAlchemy==1.4.51
+PyMySQL~=1.1.0
+#sudo apt install -y libmariadb-dev
+mariadb==1.1.10
+scikit-learn
+scipy
+matplotlib
+tqdm
+cvxpy
+torch==2.2.1
+torchvision==0.17.1
+holisticai
