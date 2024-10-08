@@ -2,16 +2,11 @@
 Description
 
     TECHNICAL FIELD
-    [0001]
     The invention relates to a sulfide solid electrolyte, an electrode mix and a lithium ion battery.
     BACKGROUND ART
-    [0002]
     In recent years, with rapid spread of information-related equipment or communication equipment such as PCs, video cameras, mobile phones, etc., development of a battery used as the power source thereof have considered to be important. Among the batteries, a lithium ion battery has attracted attention due to its high energy density.
-    [0003]
     In a lithium ion battery that is currently commercially available, since an electrolyte containing a flammable organic solvent is used, attachment of a safety device that suppresses an increase in temperature at the time of short circuit or improvement in structure and material in order to avoid occurrence of short circuit is required. On the other hand, since a lithium ion battery obtained by allowing a battery to be totally solid by using a solid electrolyte as an electrolyte does not use a flammable organic solvent in a battery, simplification of a safety device can be attained, by which saving a production cost or improving productivity.
-    [0004]
     As the solid electrolyte used in a lithium ion battery, a sulfide solid electrolyte is known. As the crystal structure of a sulfide solid electrolyte, various structures are known. As one of such crystal structures, an argyrodite type crystal structure is known (Patent Documents 1 to 5, Non-Patent Documents 1 to 3).
-    [0005]
     An argyrodite type crystal structure is a highly stable crystal structure, and some of them have high lithium ion conductivity.
     RELATED ART DOCUMENT
     Patent Documents
@@ -26,12 +21,9 @@ Description
         Non-Patent Document 3: Solid State Ionics Vol. 221 (2012) P. 1-5
     SUMMARY OF THE INVENTION
     Problems to be Solved by the Invention
-    [0014]
     One object of the invention is to provide a novel sulfide solid electrolyte comprising an argyrodite type crystal structure and having a high ionic conductivity due to presence of a large amount of a halogen element.
-    [0015]
     One object of the invention is to provide a sulfide solid electrolyte comprising an argyrodite type crystal structure that can suppress agglomeration at the time of production.
     Means for Solving the Problems
-    [0016]
     According to one embodiment of the invention, provided is a sulfide solid electrolyte comprising lithium, phosphorus, sulfur and one or more elements X selected from halogen elements, wherein the sulfide solid electrolyte comprises an argyrodite type crystal structure, and wherein a molar ratio of the lithium to the phosphorus “a (Li/P)”, a molar ratio of the sulfur to the phosphorus “b (S/P)” and a molar ratio of the element X to the phosphorus “c (X/P)” satisfy the following formulas (1) to (3):
 
     5.05≦a<7.3  (1)
@@ -41,21 +33,14 @@ Description
     7.0<a+c≦7.3  (3)
     provided that b>0 and c>0.
     Advantageous Effects of the Invention
-    [0017]
     According to one embodiment of the invention, it is possible to provide a sulfide solid electrolyte comprising an argyrodite type crystal structure and having a high ionic conductivity due to presence of a large amount of a halogen element.
-    [0018]
     Further, according to one embodiment of the invention, it is possible to provide a sulfide solid electrolyte comprising an argyrodite type crystal structure that can suppress agglomeration at the time of production.
     BRIEF DESCRIPTION OF THE DRAWINGS
-    [0019]
     FIG. 1 is an X-ray diffraction pattern of an intermediate obtained in Example 1;
-    [0020]
     FIG. 2 is a photograph of an external appearance of a sulfide solid electrolyte immediately after the collection;
-    [0021]
     FIG. 3 is an X-ray diffraction pattern of a sulfide solid electrolyte obtained in Example 1; and
-    [0022]
     FIG. 4 is an X-ray diffraction pattern of mixed powder in Comparative Example 7.
     MODE FOR CARRYING OUT THE INVENTION
-    [0023]
     The sulfide solid electrolyte according to one embodiment of the invention comprises lithium, phosphorus, sulfur and one or more elements X selected from halogen elements, and characterized in that a molar ratio of the lithium to the phosphorus “a (Li/P)”, a molar ratio of the sulfur to the phosphorus “b (S/P)” and a molar ratio of the element X to the phosphorus “c (X/P)” satisfy the following formulas (1) to (3):
 
     5.05≦a<7.3  (1)
@@ -64,137 +49,76 @@ Description
 
     7.0<a+c≦7.3  (3)
     provided that b>0 and c>0.
-    [0024]
-    The stoichiometric composition of a sulfide solid electrolyte comprising a common argyrodite type crystal structure is represented by Li7−xPS6−xXx. The sulfide solid electrolyte of this embodiment has a composition different from a normal composition. When deviation in composition of S is taken as a and deviation in composition of X is taken as β, the composition of the sulfide solid electrolyte of this embodiment is represented by Li7−xPS6−x+αXx+β. In this case, a−b in the above formula (2) is a−b=7−x−(6−x+α)=1−α. a−b is a value correlated with the deviation in composition of S. a+c in the formula (3) is a+c=7−x+x+β=7+β. a+c is a value correlated with the deviation in composition of X.
-    [0025]
-    0.705≦a−b<1.0 in the formula (2) becomes 0.70≦1−α<1.0. When the formula is further modified, it becomes 0<α≦0.30. That is, the sulfide solid electrolyte of this embodiment is a sulfide solid electrolyte that contains an excessive amount of S (sulfur) as compared with a sulfide solid electrolyte that comprises a common argyrodite type crystal structure.
-    [0026]
-    The 7.0<a+c≦7.3 in the formula (3) becomes 7.0<7+β≦7.3. When the formula is further modified, it becomes 0≦β<0.3. That is, the sulfide solid electrolyte of this embodiment is a sulfide solid electrolyte that contains an excessive amount of X (halogen) as compared with a sulfide solid electrolyte that comprises a common argyrodite type crystal structure.
-    [0027]
-    As the halogen element, F, Cl, Br, I or the like can be given.
-    [0028]
-    The above formula (2) is preferably 0.855a−b<1.0, with 0.95a−b<1.0 being more preferable.
-    [0029]
-    The above formula (3) is preferably 7.0<a+c≦7.15, with 7.0<a+c≦7.1 being more preferable.
-    [0030]
-    In the sulfide solid electrolyte of this embodiment, when the above formula (1) is satisfied, the above formula (2) is 0.70≦a−b<1.0 and the above formula (3) is 7.0<a+c≦7.3, the ionic conductivity is 5.0 mS/cm or more. When the above formula (1) is satisfied, the above formula (2) is 0.85≦a−b<1.0 and the above formula (3) is 7.0<a+c≦7.15, the ionic conductivity can be higher, i.e. 5.5 mS/cm or more. Further, when the above formula (1) is satisfied, the above formula (2) is 0.9≦a−b<1.0 and the above formula (3) is 7.0<a+c≦7.1, the ionic conductivity can be further higher, i.e. 6.5 mS/cm or more.
-    [0031]
-    The molar ratio or composition of each element in the sulfide solid electrolyte can be measured by the inductively coupled plasma atomic emission spectroscopy. The method for measuring by the inductively coupled plasma atomic emission spectroscopy is described in the Examples.
-    [0032]
-    The molar ratio of each element can be controlled by adjusting the content of each element in the raw materials.
-    [0033]
-    As the ionic radius of the halogen element is smaller, the amount of the halogen elements contained in the argyrodite type crystal structure increases and the ionic conductivity becomes higher. Therefore, it is preferred that the molar ratio “a” of the lithium to the phosphorus can be adjusted by the ionic radius of the halogen element. The halogen element (X) can be classified into three types F, Cl(X1), Br(X2) and I(X3) depending on the ionic radius.
-    [0034]
-    In the entire element X, when the molar ratio of element X1 is largest, it is preferred that the above-mentioned formula (1) be 5.1≦a≦6.6, with 5.2≦a≦6.4 being more preferable. When the molar ratio of element X2 is largest, it is preferred that the above-mentioned formula (1) be 5.2≦a≦6.8, with 5.3≦a≦6.6 being more preferable. Further, when the molar ratio of element X3 is largest, it is preferred that the above-mentioned formula (1) be 5.3≦a≦7.0, with 5.4≦a≦6.8 being more preferable.
-    [0035]
-    The sulfide solid electrolyte of this embodiment comprises an argyrodite type crystal structure. Presence of an argyrodite type crystal structure can be confirmed by presence of diffraction peaks at 2θ=25.2±0.5 deg and 29.7±0.5 deg by powder X-ray diffractometry using CuKα rays.
-    [0036]
-    The diffraction peaks at 2θ=25.2±0.5 deg and 29.7±0.5 deg are peaks derived from an argyrodite type crystal structure. The argyrodite type crystal structure is a structure in which PS4 3− is present as the unit structure of the main framework structure and in which a sulfur element (S) or a halogen element (X) surrounded by a lithium element (Li) is located around PS4 3−.
-    [0037]
-    The diffraction peak of an argyrodite type crystal structure may often appear at 2θ=15.3±0.5 deg, 17.7±0.5 deg, 31.1±0.5 deg, 44.9±0.5 deg and 47.7±0.5 deg, for example. The sulfide solid electrolyte of this embodiment may have these peaks.
-    [0038]
-    In this embodiment, the position of the diffraction peak is judged to be A±0.5 deg or A±0.4 deg assuming that the median value is A. The position is preferably A±0.3 deg. For example, in the case of the above-mentioned diffraction peak of 2θ=25.2±0.5 deg, the median value A is 25.2 deg and is preferably present in a range of 2θ=25.2±0.3 deg. The same can be applied to judgement of all of the other diffraction peak positions in this embodiment.
-    [0039]
-    As the argyrodite type crystal structure, crystal structures disclosed in the Non-Patent Documents 1 to 3, JP-T-2010-540396, JP-A-2011-096630 and JP-A-2013-211171 can be given, for example.
-    [0040]
-    The sulfide solid electrolyte of this embodiment may contain crystal structures other than the argyrodite type crystal structure. In general, in a sulfide solid electrolyte, various crystal components and amorphous components are present in mixture. A sulfide solid electrolyte comprising a crystal structure is a sulfide solid electrolyte for which a peak derived from a solid electrolyte is observed in an X-ray diffraction pattern in an X-ray diffractometry. Further, there may be a case that remaining raw materials are contained.
-    [0041]
-    The sulfide solid electrolyte of this embodiment may contain elements such as Si, Ge, Sn, Pb, B, Al, Ga, As, Sb and Bi in addition to the lithium, the phosphorus, the sulfur and the element X. Further, it may contain chalcogen elements (oxygen (O), selenium (Se), tellurium (Te), etc.). When the sulfide solid electrolyte comprises one or more elements M selected from the group consisting of Si, Ge, Sn, Pb, B, Al, Ga, As, Sb and Bi, the molar ratio of each element in the above-mentioned (1) to (3) is a molar ratio relative to the total of the element M and phosphorus. For example, the molar ratio of the lithium to the phosphorus “a (Li/P)” is Li/(P+M).
-    [0042]
-    It is preferred that the sulfide solid electrolyte of this embodiment satisfy, for example, the composition represented by the following formula (4):
 
+    The stoichiometric composition of a sulfide solid electrolyte comprising a common argyrodite type crystal structure is represented by Li7−xPS6−xXx. The sulfide solid electrolyte of this embodiment has a composition different from a normal composition. When deviation in composition of S is taken as a and deviation in composition of X is taken as β, the composition of the sulfide solid electrolyte of this embodiment is represented by Li7−xPS6−x+αXx+β. In this case, a−b in the above formula (2) is a−b=7−x−(6−x+α)=1−α. a−b is a value correlated with the deviation in composition of S. a+c in the formula (3) is a+c=7−x+x+β=7+β. a+c is a value correlated with the deviation in composition of X.
+    0.705≦a−b<1.0 in the formula (2) becomes 0.70≦1−α<1.0. When the formula is further modified, it becomes 0<α≦0.30. That is, the sulfide solid electrolyte of this embodiment is a sulfide solid electrolyte that contains an excessive amount of S (sulfur) as compared with a sulfide solid electrolyte that comprises a common argyrodite type crystal structure.
+    The 7.0<a+c≦7.3 in the formula (3) becomes 7.0<7+β≦7.3. When the formula is further modified, it becomes 0≦β<0.3. That is, the sulfide solid electrolyte of this embodiment is a sulfide solid electrolyte that contains an excessive amount of X (halogen) as compared with a sulfide solid electrolyte that comprises a common argyrodite type crystal structure.
+    As the halogen element, F, Cl, Br, I or the like can be given.
+    The above formula (2) is preferably 0.855a−b<1.0, with 0.95a−b<1.0 being more preferable.
+    The above formula (3) is preferably 7.0<a+c≦7.15, with 7.0<a+c≦7.1 being more preferable.
+    In the sulfide solid electrolyte of this embodiment, when the above formula (1) is satisfied, the above formula (2) is 0.70≦a−b<1.0 and the above formula (3) is 7.0<a+c≦7.3, the ionic conductivity is 5.0 mS/cm or more. When the above formula (1) is satisfied, the above formula (2) is 0.85≦a−b<1.0 and the above formula (3) is 7.0<a+c≦7.15, the ionic conductivity can be higher, i.e. 5.5 mS/cm or more. Further, when the above formula (1) is satisfied, the above formula (2) is 0.9≦a−b<1.0 and the above formula (3) is 7.0<a+c≦7.1, the ionic conductivity can be further higher, i.e. 6.5 mS/cm or more.
+    The molar ratio or composition of each element in the sulfide solid electrolyte can be measured by the inductively coupled plasma atomic emission spectroscopy. The method for measuring by the inductively coupled plasma atomic emission spectroscopy is described in the Examples.
+    The molar ratio of each element can be controlled by adjusting the content of each element in the raw materials.
+    As the ionic radius of the halogen element is smaller, the amount of the halogen elements contained in the argyrodite type crystal structure increases and the ionic conductivity becomes higher. Therefore, it is preferred that the molar ratio “a” of the lithium to the phosphorus can be adjusted by the ionic radius of the halogen element. The halogen element (X) can be classified into three types F, Cl(X1), Br(X2) and I(X3) depending on the ionic radius.
+    In the entire element X, when the molar ratio of element X1 is largest, it is preferred that the above-mentioned formula (1) be 5.1≦a≦6.6, with 5.2≦a≦6.4 being more preferable. When the molar ratio of element X2 is largest, it is preferred that the above-mentioned formula (1) be 5.2≦a≦6.8, with 5.3≦a≦6.6 being more preferable. Further, when the molar ratio of element X3 is largest, it is preferred that the above-mentioned formula (1) be 5.3≦a≦7.0, with 5.4≦a≦6.8 being more preferable.
+    The sulfide solid electrolyte of this embodiment comprises an argyrodite type crystal structure. Presence of an argyrodite type crystal structure can be confirmed by presence of diffraction peaks at 2θ=25.2±0.5 deg and 29.7±0.5 deg by powder X-ray diffractometry using CuKα rays.
+    The diffraction peaks at 2θ=25.2±0.5 deg and 29.7±0.5 deg are peaks derived from an argyrodite type crystal structure. The argyrodite type crystal structure is a structure in which PS4 3− is present as the unit structure of the main framework structure and in which a sulfur element (S) or a halogen element (X) surrounded by a lithium element (Li) is located around PS4 3−.
+    The diffraction peak of an argyrodite type crystal structure may often appear at 2θ=15.3±0.5 deg, 17.7±0.5 deg, 31.1±0.5 deg, 44.9±0.5 deg and 47.7±0.5 deg, for example. The sulfide solid electrolyte of this embodiment may have these peaks.
+    In this embodiment, the position of the diffraction peak is judged to be A±0.5 deg or A±0.4 deg assuming that the median value is A. The position is preferably A±0.3 deg. For example, in the case of the above-mentioned diffraction peak of 2θ=25.2±0.5 deg, the median value A is 25.2 deg and is preferably present in a range of 2θ=25.2±0.3 deg. The same can be applied to judgement of all of the other diffraction peak positions in this embodiment.
+    As the argyrodite type crystal structure, crystal structures disclosed in the Non-Patent Documents 1 to 3, JP-T-2010-540396, JP-A-2011-096630 and JP-A-2013-211171 can be given, for example.
+    The sulfide solid electrolyte of this embodiment may contain crystal structures other than the argyrodite type crystal structure. In general, in a sulfide solid electrolyte, various crystal components and amorphous components are present in mixture. A sulfide solid electrolyte comprising a crystal structure is a sulfide solid electrolyte for which a peak derived from a solid electrolyte is observed in an X-ray diffraction pattern in an X-ray diffractometry. Further, there may be a case that remaining raw materials are contained.
+    The sulfide solid electrolyte of this embodiment may contain elements such as Si, Ge, Sn, Pb, B, Al, Ga, As, Sb and Bi in addition to the lithium, the phosphorus, the sulfur and the element X. Further, it may contain chalcogen elements (oxygen (O), selenium (Se), tellurium (Te), etc.). When the sulfide solid electrolyte comprises one or more elements M selected from the group consisting of Si, Ge, Sn, Pb, B, Al, Ga, As, Sb and Bi, the molar ratio of each element in the above-mentioned (1) to (3) is a molar ratio relative to the total of the element M and phosphorus. For example, the molar ratio of the lithium to the phosphorus “a (Li/P)” is Li/(P+M).
+    It is preferred that the sulfide solid electrolyte of this embodiment satisfy, for example, the composition represented by the following formula (4):
     Lia(P1−zMz)SbXc  (4)
-    [0043]
     wherein in the above formula, M is one or more elements selected from the group consisting of Si, Ge, Sn, Pb, B, Al, Ga, As, Sb and Bi, and X is one or more elements selected from the group consisting of F, Cl, Br and I. a to c satisfy the above formulas (1) to (3). z is 0≦z≦0.3.
-    [0044]
     If the molar ratio of F and Cl relative to the entire X is largest in the formula (4), a is preferably 5.1≦a≦6.6, with 5.2≦a≦6.4 being more preferable. If the molar ratio of Br is largest, a is preferably 5.2≦a≦6.8, with 5.3≦a≦6.6 being more preferable. If the molar ratio of I is largest, a is preferably 5.3≦a≦7.0, with 5.4≦a≦6.8 being more preferable.
-    [0045]
     In X in the formula (4), if two or more halogen elements are contained, the amount ratio of each element is not limited.
-    [0046]
     z is more preferably 0.
-    [0047]
     It is preferred that the sulfide solid electrolyte of this embodiment do not have a diffraction peak (not a diffraction peak derived from an argyrodite type crystal structure) at 2θ=17.6±0.4 deg and 2θ=18.1±0.4 deg in powder X-ray diffractometry using CuKα rays. If it has the diffraction peak at these positions, it is preferred that the sulfide solid electrolyte satisfy the following formula (5):
 
     0<IA/IB<0.05  (5)
     (wherein in the formula, IA represents the intensity of the diffraction peak which is not a diffraction peak derived from the argyrodite type crystal structure among diffraction peaks at 2θ=17.6±0.4 deg and 2θ=18.1±0.4 deg, and IB represents the intensity of the diffraction peak at 2θ=29.7±0.5 deg).
-    [0048]
     The crystal structure specified by IA (hereinafter referred to as the Li3PS4 crystal structure) has a low ionic conductivity, and hence lowers ionic conductivity of the solid electrolyte. The above formula (5) shows that the amount of the Li3PS4 crystal structure is relatively low as compared with the amount of the argyrodite type crystal structure. The formula (5) is more preferably 0<IA/IB<0.03, with 0<IA/IB<0.02 being further preferable.
-    [0049]
     There may be case where either 2θ=17.6±0.4 deg or 2θ=18.1±0.4 deg cannot be measured since it overlaps the diffraction peak of the argyrodite type crystal structure that has a relatively strong peak intensity. Therefore, “the diffraction peak which is not a diffraction peak derived from the argyrodite type crystal structure among diffraction peaks at 2θ=17.6±0.4 deg and 2θ=18.1±0.4 deg” usually means one having a weaker intensity among these two peaks measured. In the meantime, there is a case where noises are observed like a peak. In such a case, it is needless to say that if this noise is assumed to be IB, the formula (5) is satisfied.
-    [0050]
     The sulfide solid electrolyte of this embodiment can be produced by a production method comprising a step in which a mixture of raw materials mentioned later is reacted by applying a mechanical stress to prepare an intermediate and a step in which the intermediate is heat-treated for crystallization.
-    [0051]
     As the raw materials used, two or more compounds or simple substances containing, as a whole, elements to be contained as essential components in a sulfide solid electrolyte to be produced (i.e. lithium, phosphorus, sulfur, and halogen element (X) are used in combination).
-    [0052]
     Examples of the raw material containing lithium include lithium compounds such as lithium sulfide (Li2S), lithium oxide (Li2O), lithium carbonate (Li2CO3), elemental lithium metal, and the like. Among them, a lithium compound is preferable, with lithium sulfide being more preferable.
-    [0053]
     Examples of the raw material containing phosphorus include phosphorus compounds such as phosphorus sulfide such as phosphorus trisulfide (P2S3) and phosphorus pentasulfide (P2S5), sodium phosphate (Na3PO4), elemental phosphorus, or the like. Among these, phosphorus sulfide is preferable, with phosphorus pentasulfide (P2S5) being more preferable.
-    [0054]
     As the raw material containing the halogen element X, it is preferred that the raw material contain a halogen compound represented by the following formula (6), for example.
 
     Ml-Xm  (6)
-    [0055]
     In the formula (6), M is sodium (Na), lithium (Li), boron (B), aluminum (Al), silicon (Si), phosphorus (P), sulfur (S), germanium (Ge), arsenic (As), selenium (Se), tin (Sn), antimony (Sb), tellurium (Te), lead (Pb), bismuth (Bi) or those in which an oxygen element or a sulfur element are bonded to these elements, and lithium (Li) or phosphorus (P) is preferable, with lithium (Li) being more preferable.
-    [0056]
     X is a halogen element selected from the group consisting of fluorine (F), chlorine (Cl), bromine (Br) and iodine (I).
-    [0057]
     l is an integer of 1 or 2 and m is an integer of 1 to 10. When m is an integer of 2 to 10, that is, when plural Xs are present, the Xs may be the same or different. For example, in the case of SiBrCl3 mentioned later, m is 4, and X is formed of different elements, i.e. Br and Cl.
-    [0058]
     As the halogen compound represented by the formula (6), specifically, sodium halide such as NaI, NaF, NaCl and NaBr lithium halide such as LiF, LiCl, LiBr and LiI; boron halide such as BCl3, BBr3 and BI3; aluminum halide such as AlF3, AlBr3, AlI3 and AlCl3; silicon halide such as SiF4, SiCl4, SiCl3, Si2Cl6, SiBr4, SiBrCl3, SiBr2Cl2 and SiI4; phosphorus halide such as PF3, PF5, PCl3, PCl5, POCl3, PBr3, POBr3, PI3, P2Cl4 and P2I4; sulfur halide such as SF2, SF4, SF5, S2F10, SCl2, S2Cl2 and S2Br2; germanium halide such as GeF4, GeCl4, GeBr4, GeI4, GeF2, GeCl2, GeBr2 and GeI2; arsenic halide such as AsF3, AsCl3, AsBr3, AsI3 and AsF5; selenium halide such as SeF4, SeF6, SeCl2, SeCl4, Se2Br2 and SeBr4; tin halide such as SnF4, SnCl4, SnBr4, SnI4, SnF2, SnCl2, SnBr2 and SnI2; antimony halide such as SbF3, SbCl3, SbBr3, SbI3, SbF5 and SbCl5; tellurium halide such as TeF4, Te2F10, TeF6, TeCl2, TeCl4, TeBr2, TeBr4 and TeI4; lead halide such as PbF4, PbCl4, PbF2, PbCl2, PbBr2 and PbI2; bismuth halide such as BiF3, BiCl3, BiBr3 and BiI3, and the like can be given.
-    [0059]
     Among these, lithium halides such as lithium chloride (LiCl), lithium bromide (LiBr) and lithium iodide (LiI), and phosphorous halide such as phosphorus pentachloride (PCl5), phosphorus trichloride (PCl3), phosphorus pentabromide (PBr5), phosphorus tribromide (PBr3) or the like can preferably be given. Among these, lithium halides such as LiCl, LiBr and LiI and PBr3 are preferable, with lithium halide such as LiCl, LiBr and LiI are more preferable, with LiCl and LiBr being further preferable.
-    [0060]
     As the halogen compound, one of the above-mentioned compounds may be used singly, or two or more may be used in combination. That is, at least one of the above-mentioned compounds can be used. Further, in this case, as for the halogen element, one selected from the above-mentioned halogen elements can be used singly or two or more selected from the above-mentioned halogen elements can be used in combination.
-    [0061]
     In this embodiment, it is preferred that the raw materials contain a lithium compound, a phosphorus compound and a halogen compound, and at least one of the lithium compound and the phosphorus compound comprises a sulfur element. Combination of lithium sulfide, phosphorus sulfide and lithium halide is more preferable, with combination of lithium sulfide, phosphorus pentasulfide and lithium halide being further preferable.
-    [0062]
     In this embodiment, the elemental ratio of sulfur contained in the sulfide solid electrolyte is high. As a result, a sulfide solid electrolyte having a high ionic conductivity can be obtained. Further, since the elemental ratio of sulfur contained in the sulfide solid electrolyte is high, it is possible to obtain a sulfide solid electrolyte that is hardly agglomerated at the time of sintering even if the elemental ratio of a halogen element is high.
-    [0063]
     In order to adjust the elemental composition of the sulfide solid electrolyte, for example, when lithium sulfide, phosphorus sulfide and lithium halide (LiX) are used as the raw material, a method can be given in which an elemental sulfur, a sulfur compound such as an organic polysulfide, an inorganic polysulfide, sulfur nitride, etc. are further used as raw materials, by which the elemental ratio of a sulfur element is increased. By using these, from the stoichiometric ratio calculated from the three types of the raw materials, i.e. Li2S, P2S5 and LiX, it is preferable to increase the amount of sulfur relatively. Especially, it is preferable to use the elemental sulfur as the raw material.
-    [0064]
     In this embodiment, a mechanical stress is applied to the above-mentioned raw materials to allow them to react, thereby allowing them to be an intermediate. Here, the “applying a mechanical stress” means that shear force, impact strength, etc. are mechanically applied. As means for applying a mechanical stress, a pulverizer such as a planetary ball mill, a vibration mill and a rolling mill, and a kneader, etc. can be given.
-    [0065]
     In the conventional technology (for example, Patent Document 2, etc.), pulverization and mixing are carried out to such an extent that the crystallinity of the raw material powder can be maintained. On the other hand, in this embodiment, it is preferable that the raw materials be subjected to a mechanical stress and reacted, thereby to obtain an intermediate containing a glass component That is, by a mechanical stress higher than that used in the conventional technology, pulverization and mixing are conducted to such a level that at least part of the raw material powder cannot maintain crystallinity. As a result, in the stage of an intermediate, a PS4 unit structure that is a basic framework structure of the argyrodite type crystal structure can be generated and a halogen can be highly dispersed. As a result, in the heat-treatment as the next step, when the argyrodite type crystal structure that is a stable phase is formed, a halogen tends to be incorporated into the argyrodite type crystal structure easily. Further, it is assumed that a low ionic conductivity phase such as Li3PS4 crystal structure is hardly generated since a halogen is not passed through the different crystal phases of the region. As a result, the sulfide solid electrolyte of this embodiment exhibits high ionic conductivity.
-    [0066]
     Presence of a glass (amorphous) component in an intermediate can be confirmed by the presence of a broad peak (hallo pattern) derived from an amorphous component in an XRD measurement.
-    [0067]
     Further, in the case of the sulfide solid electrolyte of this embodiment, since there is no need to heat the raw material at 550° C. for 6 days as in the case of the Patent Document 1, productivity is high.
-    [0068]
     The sulfide solid electrolyte having a high ionic conductivity is a sulfide solid electrolyte in which a large amount of a halogen is incorporated into an argyrodite type crystal structure. In order to obtain a sulfide solid electrolyte having a high ionic conductivity, it is preferred that the amount of lithium halide (LiX) as the raw material be high. On the other hand, if the amount of LiX is increased, the amount of Li2S is relatively decreased, and the amount ratio of S in the raw material is decreased. As a result, a P2S7 unit structure and a P2S6 unit structure tend to be generated easily in an intermediate during the production of a glass intermediate. As a result, when an argyrodite type crystal structure is formed by heat treating a glass intermediate, a halogen is passed through the above-mentioned structure formed in the intermediate, and a halogen is incorporated into other phases before entering the site of an argyrodite type crystal structure, or agglomerated or re-agglomerated without being dispersed, by which a high ionic conductivity cannot be obtained. In this embodiment, the above-mentioned problems can be suppressed by producing a glass-like intermediate by using an excessive amount of S.
-    [0069]
     When a sulfide solid electrolyte containing an argyrodite type crystal structure is produced directly from a raw material without passing through an intermediate containing glass components, it is difficult to obtain a sulfide solid electrolyte having a high ionic conductivity. The reason therefor is as follows. Since a halogen ion tends to be accumulated in a stable phase, when a sulfide solid electrolyte is produced directly from a raw material, during a period in which an argyrodite type crystal structure is formed in a sulfide solid electrolyte, a halogen ion is incorporated into other stable phases or agglomeration or re-agglomeration tends to occur without dispersion of a halogen ion.
-    [0070]
     By producing an intermediate containing glass components and mixing raw material components at an atomic level, a halogen can be entered smoothly the site of an argyrodite type crystal structure during a heat treatment of an intermediate containing glass components.
-    [0071]
     As the condition of pulverization and mixing, for example, when a planetary ball mill is used as a pulverizer, the rotation speed may be from several tens to several hundreds of revolution/minute and may be treated for 0.5 hour to 100 hours. More specifically, in the case of the planetary ball mill (Model No. P-7, manufactured by Fritsch Co.) used in this embodiment, the rotation speed of the planetary ball mill is preferably 350 rpm or more and 400 rpm or less, more preferably 360 rpm or more and 380 rpm or less.
-    [0072]
     For example, when a ball made of zirconia is used as the pulverization media, its diameter is preferably 0.2 to 20 mm.
-    [0073]
     The intermediate prepared by pulverization and mixing is heat-treated in an inert gas atmosphere such as nitrogen, argon and the like. The heat treatment temperature is preferably 350 to 650° C., particularly preferably 400 to 550° C.
-    [0074]
     In this embodiment, the raw material mixture may be heat treated in an atmosphere of hydrogen sulfide. As a result, since evaporation of sulfur at the time of a heat treatment is suppressed, the content of sulfur can be maintained high. In this embodiment, heat treatment may be conducted in the absence of hydrogen sulfide.
-    [0075]
     For example, when lithium sulfide, phosphorus pentasulfide, lithium halide, and an elemental sulfur is used as a raw material of the sulfide solid electrolyte of the this embodiment, the molar ratio of the charged raw material is preferably lithium sulfide:phosphorus pentasulfide:lithium halide:elemental sulfur=45 to 70:8 to 15:20 to 40: more than 0 to 20 or less. After a mechanical stress is applied to these raw materials to allow them to react to obtain an intermediate, by conducting a heat treatment as mentioned above, it is possible to obtain the sulfide solid electrolyte satisfying the above formulas (1) to (3).
-    [0076]
     The sulfide solid electrolyte of this embodiment can be used in a solid electrolyte layer, a positive electrode, a negative electrolyte, etc. of a lithium ion battery, etc.
-    [0077]
     For example, by adding an active material (positive electrode active material or negative electrode active material) to the sulfide solid electrolyte of this embodiment to obtain an electrode mix, and the resulting electrode mix is used as a raw material of the positive electrode layer and the negative electrode layer. Further, the sulfide solid electrolyte of this embodiment can be used as a material of an electrolyte layer. These positive electrode layer, the negative electrode layer and the electrolyte layer can be used as each element of a lithium ion battery.
     EXAMPLES
-    [0078]
     Hereinbelow, the invention will be explained in more detail in accordance with the Examples.
-    [0079]
     The evaluation methods are as follows:
     (1) Measurement of Ionic Conductivity and Electron Conductivity
-    [0080]
     The sulfide solid electrolyte prepared in each example was filled in a tablet molding machine and a pressure of 407 MPa (press indication value 22 MPa) was applied by using a press machine to obtain a molded body. As the electrode, a carbon was put on the both sides of the molded body, and a pressure was applied again by a tablet molding machine, by which a molded body for measurement (diameter about 10 mm, thickness: 0.1 to 0.2 cm) was prepared. For this molded body, an ionic conductivity was measured by AC impedance measurement. The numerical value at 25° C. was adopted as the conductivity value.
-    [0081]
     In the ionic conductivity measuring method used in this example, when the ionic conductivity is less than 1.0×10−6 S/cm, the ionic conductivity was determined to be unmeasurable.
-    [0082]
     Further, the electronic conductivity of this molded body was measured by direct current electric measurement. As for the value of the electronic conductivity, a numerical value at 25° C. was adopted. When the electronic conductivity when a voltage of 5 V was applied was less than 1.0×10−6 S/cm, the electron conductivity was determined to be unmeasurable.
     (2) Measurement of X-Ray Diffraction (XRD) Measurement
-    [0083]
     A circular pellet having a diameter of 10 mm and a height of 0.1 to 0.3 cm was molded from the powder of the sulfide solid electrolyte produced in each example to prepare a sample. This sample was measured without touching the air using an air-tight holder for XRD. The 2θ position of the diffraction peak was determined by the centroid method using an XRD analysis software JADE.
-    [0084]
     Measurement was conducted under the following conditions using a powder X-ray diffractometer SmartLab manufactured by Rigaku Corporation.
     Tube voltage: 45 kV
     Tube current: 200 mA
@@ -204,41 +128,25 @@ Description
     Detector. Scintillation counter
     Measurement range: 2θ=10-60 deg
     Step width, scan speed: 0.02 deg, 1 deg/min
-    [0085]
     In the analysis of the peak position for confirming the existence of the crystal structure from the measurement result, the peak position was obtained by drawing the baseline by cubic approximation using the XRD analysis program JADE.
-    [0086]
     In the peak intensity, one peak intensity of the argyrodite type crystal structure existing at 2θ=29.7 deg±0.5 deg and two peak intensities of the Li3PS4 crystal structure existing at 2θ=17.6±0.4 deg and 18.1±0.4 deg were analyzed by the following procedure, and the intensity ratio was calculated.
-    [0087]
     Smoothing was carried out by moving average of 5 points of measurement data, and the lowest intensity point between 17.5 to 18.5 deg was taken as the background and subtracted from the measured data. Thereafter, the maximum value of the actually measured data between the maximum values of the actually measured data at 17.0 to 17.8 deg and 17.9 to 18.5 deg was calculated, and the smaller peak intensity was used as the peak intensity of the Li3PS4 crystal structure. In addition, the maximum value of the actually measured data at 29.0 to 32.0 deg was calculated as the peak intensity of the argyrodite type crystal structure.
     (3) ICP Measurement
-    [0088]
     Powders of the sulfide solid electrolyte prepared in each example were weighed and collected in a vial bottle in an argon atmosphere. A KOH alkaline aqueous solution was placed in the vial bottle, and the sample was dissolved while paying attention to the collection of the sulfur content, and the resultant was appropriately diluted to prepare a measurement solution. This solution was measured by means of a Paschen Runge type ICP-OES apparatus (SPECTRO ARCOS manufactured by SPECTRO Japan), and the composition was determined.
-    [0089]
     For the calibration solution, Li, P, and S were prepared by using a 1000 mg/L standard solution for ICP measurement, Cl and Br were prepared by using a 1000 mg/L standard solution for ion chromatography, and I was prepared by using potassium iodide (special grade reagent).
-    [0090]
     The two measurement solutions were prepared for each sample, and five measurements were conducted for each measurement solution, and the average value was calculated. The composition was determined by the average of the measured values of the two measurement solutions.
     Production Example 1
     (Production of Lithium Sulfide (Li2S))
-    [0091]
     200 g of LiOH anhydride (manufactured by Honjo Chemical Co., Ltd.), which had been dried under an inert gas, was charged in a 500-mL separable flask equipped with a stirrer, the temperature was raised under nitrogen flow, and the internal temperature was maintained at 200° C. The gas was switched to hydrogen sulfide gas (Sumitomo Seika Chemical Co., Ltd.), and the flow rate was set to 500 mL/min, and LiOH anhydride and hydrogen sulfide were reacted.
-    [0092]
     The water produced by the reaction was condensed and recovered by a condenser. 144 mL of water was recovered after 6 hours of reaction, and the reaction was continued for 3 hours, but water generation was not observed.
-    [0093]
     The resulting powder was recovered and the purity and XRD were measured, and as a result, the purity was found to be 98.5%, and the peak pattern of Li2S was confirmed by XRD.
     Example 1
-    [0094]
     Lithium sulfide (purity: 98.5%), phosphorus pentasulfide (manufactured by Thermophos International, purity: 99.9% or more), lithium chloride (manufactured by Sigma Aldrich Co.; purity: 99%) and an elemental sulfur (manufactured by Sigma Aldrich Co.; purity: 99.9%) were used as starting materials (hereinafter, the purity of each starting material was the same). The raw materials were mixed such that the molar ratio of lithium sulfide (Li2S), phosphorus pentasulfide (P2S5), lithium chloride (LiCl) and elemental sulfur (S) (Li2S:P2S5:LiCl:S) became 42.2:11.1:35.6:11.1. Specifically, 0.464 g of lithium sulfide, 0.591 g of phosphorus pentasulfide, 0.360 g of lithium chloride and 0.085 g of an elemental sulfur were mixed to obtain a raw material mixture.
-    [0095]
     The raw material mixture and 30 g of zirconia balls having a diameter of 10 mm were placed in a zirconia pot (45 mL) of a planetary ball mill (manufactured by Fritsch Co. Ltd., model No. P-7) and completely sealed in a glove box in an atmosphere of argon. The inside of the pot was allowed to be an argon atmosphere. The mixture was treated (mechanical milling) for 25 hours at 370 rpm by means of a planetary ball mill, and powder (intermediate) was obtained. For the resulting intermediate, the results obtained by evaluation by XRD are shown in FIG. 1. From the resulting XRD pattern, it could be confirmed that major part of the resulting intermediate was glass.
-    [0096]
     Approximately 1.5 g of the above-mentioned intermediate powder was packed in a Tammann tube (PT2, manufactured by Tokyo Glass Instruments Co., Ltd.) in a grove box under an argon atmosphere, and the mouth of the Tammann tube was dosed with a quartz wool, and the container was further sealed with a SUS sealed container so that no air could enter. Thereafter, the sealed container was placed in an electric furnace (FUW243PA, manufactured by AdvanTech) and heat-treated at a rate of 2.5° C./min from room temperature to 520° C. (increased to 520° C. in 3 hours), maintained at 520° C. for 8 hours, followed by slow cooling to obtain a sulfide solid electrolyte.
-    [0097]
     The photograph of the appearance of the sulfide solid electrolyte immediately after the recovery is shown in FIG. 2. It can be confirmed that most of the sulfide solid electrolyte is powdery. Part of an agglomerated body was easily pulverized by pulverization by a mortar.
-    [0098]
     The ionic conductivity (σ) of the sulfide solid electrolyte was 8.9 mS/cm, and the electron conductivity was less than 10−6 S/cm.
-    [0099]
     The XRD pattern of the sulfide solid electrolyte is shown in FIG. 3. A peak derived from the argyrodite type crystal structure was observed at 2θ=15.6, 18.0, 25.6, 30.1, 31.5, 45.2 and 48.1 deg. On the other hand, a peak at 17.6±0.4 deg derived from the Li3PS4 crystal structure was not observed.
-    [0100]
     The sulfide solid electrolyte was subjected to an ICP analysis, and the molar ratio of each element was measured. The ionic conductivity and the residual ratio were measured. The results are shown in Table 1.
     	TABLE 1
 
@@ -266,17 +174,11 @@ Description
     Comp. Ex. 5 	5.80 	5.15 	1.17 	0.65 	6.97 	1.6
     Comp. Ex. 6 	5.85 	4.82 	1.47 	1.03 	7.32 	2.4
     Examples 2 to 12 and Comparative Examples 1 to 6
-    [0101]
     A sulfide solid electrolyte was prepared and evaluated in the same manner as in Example 1, except the composition of the raw materials, the conditions of mechanical milling and the heat treatment conditions of intermediate were changed as shown in Table 2. The results are shown in Table 1.
-    [0102]
     Each sulfide solid electrolyte had an electron conductivity of less than 10−6 S/cm.
-    [0103]
     In Examples 2 to 7 and 9 to 11, the intermediates were produced in the same manner as in Example 1, except that hydrogen sulfide was introduced at the time of heat treatment of an intermediate.
-    [0104]
     For example, in Example 2, in a glove box in an atmosphere of argon, about 1.5 g of powder of the intermediate was filled in a glass tube provided with sealing function. In order to prevent entering of the air, the front end of the glass tube was sealed with a dedicated jig. Thereafter, the glass tube was set in an electric furnace. The dedicated jig was inserted into a joint in the electric furnace, connected with a gas circulation tube, and subjected to a heat treatment while circulating hydrogen sulfide at a flow rate of 20 mL/min. Specifically, the temperature was elevated from room temperature to 500° C. at a rate of 2.5° C./min (heated to 500° C. for 3 hours), and retained at 500° C. for 4 hours. Thereafter, the glass tube was gradually cooled, by which a sulfide solid electrolyte was obtained.
-    [0105]
     In Comparative Example 1, a peak derived from the argyrodite type crystal structure was observed at 2θ=15.5, 17.7, 25.5, 30.0, 31.4, 44.8 and 48.0 deg. On the other hand, a peak derived from the Li3PS4 crystal structure was not observed.
-    [0106]
     For Comparative Examples 1 and 2, the photograph of the appearance of the sulfide solid electrolyte immediately after the recovery is shown in FIG. 2. It can be confirmed that the sulfide solid electrolyte was in the form of a large agglomerate. By pulverization by a mortar, large grains remained, i.e. sufficient pulverization could not be conducted.
     	TABLE 2
 
@@ -305,25 +207,15 @@ Description
     Comp. Ex. 5 	0.559 	0.588 	0.269 	0.085 	370 	25 	500 	4 	50
     Comp. Ex. 6 	0.452 	0.520 	0.318 	0.210 	370 	25 	500 	4 	—
     Comparative Example 7
-    [0107]
     The raw materials were mixed such that the molar ratio of lithium sulfide (Li2S), phosphorus pentasulfide (P2S5) and lithium chloride (LiCl) (Li2S:P2S5:LiCl), which was used in Example 1, became 1.9:0.5:1.6.
-    [0108]
     The raw material mixture and 30 g of zirconia balls having a diameter of 10 mm were placed in a zirconia pot (45 mL) of a planetary ball mill (manufactured by Fritsch Co., Ltd., model No. P-7) and completely sealed, and the inside of the pot was allowed to be an argon atmosphere. Mixing was conducted to such an extent that the crystallinity of the raw material powder can be maintained, thereby to obtain a mixed powder.
-    [0109]
     The XRD pattern of the resulting mixed powder is shown in FIG. 4. In the resulting XRD pattern, the peaks of Li2S, P2S5 and LiCl as the raw materials were confirmed, and the crystallinity of the raw material powder was maintained.
-    [0110]
     In a glove box in an atmosphere of argon, about 1.5 g of powder of the intermediate was filed in a glass tube provided with sealing function. In order to prevent entering of air, the front end of the glass tube was sealed with a dedicated jig. Thereafter, the glass tube was set in an electric furnace. The dedicated jig was inserted into a joint in the electric furnace, connected with a gas circulation tube, and subjected to a heat treatment while circulating hydrogen sulfide at a flow rate of 20 m/min. Specifically, the temperature was elevated from room temperature to 500° C. at a rate of 2.5° C./min (heated to 500° C. for 3 hours), and retained at 500° C. for 4 hours. Thereafter, the glass tube was gradually cooled, by which a sulfide solid electrolyte was obtained.
-    [0111]
     For Examples 3 to 7 and 9 to 11, hydrogen sulfide was introduced in the same manner as in Example 2 under the conditions of Table 2.
-    [0112]
     The resulting sulfide solid electrolyte was subjected to an ICP analysis, and the molar ratio of each element was measured. The ionic conductivity was also measured. As a result, a (Li/P)=5.4, b (S/P)=4.4, c (Cl/P)=1.6, and the ionic conductivity (σ) was 2.7 mS/cm.
     Example 13
-    [0113]
     In addition to lithium sulfide (Li2S), phosphorus pentasulfide (P2S5) and lithium chloride (LiCl) and an elemental sulfur, lithium iodide (LiI: manufactured by Sigma Aldrich Co. Ltd., purity: 99%) was further used as the raw materials. The raw materials were mixed such that the molar ratio thereof (Li2S:P2S5:LiCl:LiI:S) became 42.2:11.1:33.3:2.2:11.1. Specifically, 0.449 g of lithium sulfide, 0.572 g of phosphorus pentasulfide, 0.327 g of lithium chloride, 0.069 g of lithium iodide and 0.083 g of elemental sulfur were mixed to obtain a raw material mixture.
-    [0114]
     By using the resulting raw material mixture, a sulfide solid electrolyte was produced under the same mechanical milling conditions and heat treatment conditions as Example 2. The ionic conductivity (σ) of the resulting sulfide solid electrolyte was 5.3 mS/cm. The electron conductivity was less than 10−6 S/cm.
-    [0115]
     For the resulting sulfide solid electrolyte, as a result of XRD, a peak derived from the argyrodite type crystal structure was observed.
-    [0116]
     As a result of an ICP analysis, the molar ratio “a (Li/P)” was 5.47, the molar ratio “b (S/P)” was 4.59 and the molar ratio “c ((Cl+I)/P)” was 1.67.
 
