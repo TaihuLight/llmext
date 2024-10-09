@@ -40,14 +40,16 @@ class Electrolyte(ChemNode):
      
 
 class Precursor(ChemNode):
-     function = StringProperty()
-
+     chem_function = StringProperty()
+     
+     catelyst = RelationshipFrom("Catelyst", "React_with")
      electrolyte = RelationshipFrom("Electrolyte", "Needed_BY")
 
 
 class Catelyst(ChemNode):
      chem_function = StringProperty() 
 
+     precursor = RelationshipTo("Precursor", "React_for")
      reference = RelationshipTo("Reference", "Presented_BY")
 
 
