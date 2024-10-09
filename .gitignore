@@ -1,0 +1,10 @@
+json_template/Catelyst_template.json
+json_template/Conductiviy_template.json
+json_template/CrystalStructure_template.json
+json_template/Electrolyte_template.json
+json_template/Precursor_template.json
+json_template/ReactionCondition_template.json
+json_template/ReactionDevice_template.json
+json_template/Reference_template.json
+json_template/SpaceGroup_template.json
+json_template/SynthesisOperation_template.json

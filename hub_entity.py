@@ -10,7 +10,7 @@ def setup_neo4j(database_name = 'neo4j'):
 
 # Chemistry Entity such as Electrolyte, Precursor, Catelyst
 class ChemNode(StructuredNode):
-     uid = StringProperty(unique_index=True, required=True)
+     nodeid = StringProperty(unique_index=True, required=True)
      name = StringProperty(required=True)
      alias = ArrayProperty(base_property=StringProperty())
      chem_formula = StringProperty(help_text="The chemical formula of the entity.")
@@ -18,7 +18,7 @@ class ChemNode(StructuredNode):
 
 # Experiment Node such as device, operations, etc
 class ExperimentNode(StructuredNode):
-     uid = StringProperty(unique_index=True, required=True)
+     nodeid = StringProperty(unique_index=True, required=True)
      name = StringProperty(required=True)
      alias = ArrayProperty(base_property=StringProperty())
      
@@ -52,7 +52,7 @@ class Catelyst(ChemNode):
 
 
 class Conductiviy(StructuredNode):
-     uid = StringProperty(unique_index=True, required=True)
+     entid = StringProperty(unique_index=True, required=True)
      value = FloatProperty(required=True, help_text="The unit is Siemens per meter (S/m)")
      temperature = FloatProperty(help_text="The unit is centigrade (°C). The temperature at which the conductivity was measured")
 
@@ -60,7 +60,7 @@ class Conductiviy(StructuredNode):
 
 
 class CrystalStructure(StructuredNode):
-    uid = StringProperty(unique_index=True, required=True)
+    nodeid = StringProperty(unique_index=True, required=True)
     name = StringProperty(required=True)
     crystal_family = StringProperty()
     crystal_system = StringProperty()
@@ -72,7 +72,7 @@ class CrystalStructure(StructuredNode):
 
 # There are 230 distinct space groups, which are classified into 7 crystal systems, 14 Bravais lattices, and 32 crystal classes.
 class SpaceGroup(StructuredNode):
-    uid = StringProperty(unique_index=True, required=True)
+    nodeid = StringProperty(unique_index=True, required=True)
     name = StringProperty(required=True)
     sg_dimension = IntegerProperty(default=2)
 
@@ -102,7 +102,7 @@ class SynthesisOperation(ExperimentNode):
     
 
 class Reference(StructuredNode):
-    uid = StringProperty(unique_index=True, required=True)
+    nodeid = StringProperty(unique_index=True, required=True)
     title = StringProperty(required=True)
     type = StringProperty()     # Journal, Conference, Thesis, Report, etc
     authors = ArrayProperty(required=True, base_property=StringProperty())
@@ -132,7 +132,7 @@ def generate_json_template(node_class):
           elif isinstance(property_obj, FloatProperty):
                properties[attr] = "Float-point value"
           elif isinstance(property_obj, ArrayProperty):
-               properties[attr] = "Array of strings"
+               properties[attr] = "Array of strings such as ['string1', 'string2']"
           elif isinstance(property_obj, DateTimeProperty):
                properties[attr] = "A datatime string such as '2023-10-04 00:00:00'"
 
@@ -149,6 +149,7 @@ def generate_json_template(node_class):
      # Create the JSON template
      json_template = {
           node_class.__name__: {
+               "label": node_class.__label__,
                "properties": properties,
                "relationships": relationships
           }
