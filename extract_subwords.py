@@ -22,7 +22,7 @@ How can I change the store format of my database?
 CREATE DATABASE neo4j2 OPTIONS "{"storeFormat: aligned"}"
 """
 
-import nltk, json
+import nltk, json, csv
 import re
 from absl import flags
 from itertools import groupby
@@ -40,7 +40,20 @@ except LookupError:
   nltk.download('averaged_perceptron_tagger_eng')
 
 
-def getRemovedMDwithnknlp(md_path):
+# Save a 1-D list as a csv file
+def save_csv_file(data_list= ['Alice', 'Bob'], csv_file= 'output.csv'):  
+  # Writing to the CSV file
+  with open(csv_file, mode='w', newline='', encoding='utf-8') as csvfile:
+      csv_writer = csv.writer(csvfile)
+      for item in data_list:
+          csv_writer.writerow([item])  # Write each item as a new row
+
+  print(f"Data saved to {csv_file}")
+
+
+
+
+def getRemovedMDwithnknlp(md_path, rm_duplicates = True):
     with open(md_path, 'r', encoding='utf-8') as f:
         md_doc = f.read()
    
@@ -74,17 +87,19 @@ def getRemovedMDwithnknlp(md_path):
     result_string = ' '.join(list_words)     
     # markdown_content = re.sub(r'\n\s*\n', '\n\n', str(markdown_content))  
     result_string = re.sub(r' ,', ',', result_string)   # Merge consecutive commas into a single comma
-    # print(result_string)
+    # print(list_subwords)
+    # Split the string and remove spaces from each item
+    list_subwords = [item.strip() for item in result_string.split(',')]
 
     # Remove duplicates except comma
-    list_subwords = result_string.split(',')
-    unique_list = []
-    for item in list_subwords:
-        item = item.strip()
-        # Check if item is not equal to any existing element in unique_list (except for ',')
-        if all(item != unique_item for unique_item in unique_list) or item == ',':        
-            unique_list.append(item)
-    list_subwords = unique_list
+    if rm_duplicates:      
+      unique_list = []
+      for item in list_subwords:
+          item = item.strip()
+          # Check if item is not equal to any existing element in unique_list (except for ',')
+          if all(item != unique_item for unique_item in unique_list) or item == ',':        
+              unique_list.append(item)
+      list_subwords = unique_list
 
     return list_subwords
     
@@ -223,10 +238,12 @@ if __name__ == '__main__':
     str2 = "In recent years, with rapid spread of information-related equipment or communication equipment such as PCs, video cameras, mobile phones, etc., development of a battery."
         
     txtpdf_file = "./data/US20180069262A.txt" 
-    # txtpdf_file = "./US20180069262A.txt"   
-    # list_subwords = getRemovedMDwithnknlp(txtpdf_file)
-    # print(list_subwords)
-    # print("Total number of subwords:", len(list_subwords))
+    txtpdf_file = "./archive/A Dynamically Stable Sulfide Electrolyte Architecture for High‐Performance All‐Solid‐State Lithium Metal Batteries.md"
+    # txtpdf_file = "./archive/Universal Solution Synthesis of Sulfide Solid Electrolytes Using Alkahest for All‐Solid‐State Batteries.md"     
+    list_subwords = getRemovedMDwithnknlp(txtpdf_file, False)
+    print(list_subwords)
+    print("Total number of subwords:", len(list_subwords))
+    save_csv_file(list_subwords, txtpdf_file[:-3]+'.csv')
 
-    retrieve_entities("electrolyte")
-    test_embeddings()
+    # retrieve_entities("electrolyte")
+    # test_embeddings()

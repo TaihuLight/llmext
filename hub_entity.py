@@ -178,6 +178,7 @@ def export_json_template(save_path):
                json_file.write(json_template)
 
 
+# Load the JSON data from a file
 def load_json_data(json_file):
      with open(json_file) as pr_file:          
           try:
@@ -217,6 +218,23 @@ def init_node(json_file):
      node_class.save()
 
 
+# TODO: Generate the vector of properties and relationships of a node
+def generate_vector(node_class):
+     properties = []
+     relationships = []
+
+     for att_array in node_class.__all_properties__:          
+          attr = att_array[0]
+          properties.append(attr)
+
+     for att_array in node_class.__all_relationships__: 
+          attr = att_array[0] 
+          relationships.append(attr)
+
+     return properties, relationships
+
+
+# Update the relationships of a node using a JSON data
 def update_relationships(json_file):
      pr_data = load_json_data(json_file)
                        
