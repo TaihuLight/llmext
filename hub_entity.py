@@ -9,7 +9,7 @@ def setup_neo4j(database_name = 'neo4j'):
      config.FORCE_TIMEZONE = True
 
 
-# Chemistry Entity such as Electrolyte, Precursor, Catelyst
+# Chemistry Entity such as Electrolyte, Precursor, Catalyst
 class ChemNode(StructuredNode):
      nodeid = StringProperty(unique_index=True, required=True)
      name = StringProperty(required=True)
@@ -50,7 +50,7 @@ class Electrolyte(ChemNode):
 class Precursor(ChemNode):
      chem_function = StringProperty()
 
-     catelyst = RelationshipFrom("Catelyst", "React_with")
+     catalyst = RelationshipFrom("Catalyst", "React_with")
      electrolyte = RelationshipFrom("Electrolyte", "Needed_BY")
 
 
@@ -173,7 +173,7 @@ def export_json_template(save_path):
      if not os.path.exists(save_path):
           os.makedirs(save_path)
      
-     node_clsname = ["Battery", "Electrolyte", "Precursor", "Catelyst", "Conductiviy", "CrystalStructure", "SpaceGroup", "ReactionDevice", "ReactionCondition", "SynthesisOperation", "Reference"]
+     node_clsname = ["Battery", "Electrolyte", "Precursor", "Catalyst", "Conductiviy", "CrystalStructure", "SpaceGroup", "ReactionDevice", "ReactionCondition", "SynthesisOperation", "Reference"]
      
      for clsname in node_clsname:
           node_class = globals()[clsname]

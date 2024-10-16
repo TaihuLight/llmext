@@ -1,4 +1,3 @@
-json_template/Catelyst_template.json
 json_template/Conductiviy_template.json
 json_template/CrystalStructure_template.json
 json_template/Electrolyte_template.json
@@ -15,7 +14,6 @@ archive/Universal Solution Synthesis of Sulfide Solid Electrolytes Using Alkahes
 archive/Universal Solution Synthesis of Sulfide Solid Electrolytes Using Alkahest for All‐Solid‐State Batteries.csv
 archive/Universal Solution Synthesis of Sulfide Solid Electrolytes Using Alkahest for All‐Solid‐State Batteries.md
 json_liao/Battery_template.json
-json_liao/Catelyst_template.json
 json_liao/Conductiviy_template.json
 json_liao/CrystalStructure_template.json
 json_liao/Electrolyte_template.json
@@ -35,3 +33,4 @@ archive/A Versatile Li6.5In0.25P0.75S5I Sulfide Electrolyte Triggered by Ultimat
 archive/A Versatile Sn‐Substituted Argyrodite Sulfide Electrolyte for All‐Solid‐State Li Metal Batteries_rmd.csv
 archive/A Versatile Sn‐Substituted Argyrodite Sulfide Electrolyte for All‐Solid‐State Li Metal Batteries.csv
 archive/A Versatile Sn‐Substituted Argyrodite Sulfide Electrolyte for All‐Solid‐State Li Metal Batteries.md
+json_template/Catalyst_template.json
