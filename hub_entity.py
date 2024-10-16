@@ -22,22 +22,29 @@ class ExperimentNode(StructuredNode):
      nodeid = StringProperty(unique_index=True, required=True)
      name = StringProperty(required=True)
      alias = ArrayProperty(base_property=StringProperty())
-     
+
+
+class Battery(ExperimentNode): 
+    subcategory = StringProperty(help_text="The subcategory of this type of battery.")
+    feature = StringProperty(help_text="The detailed feature of this type of battery.")
+    electrolyte = RelationshipFrom("Electrolyte", "Make_by")
+
 
 class Electrolyte(ChemNode): 
      subcategory = StringProperty()
      feature = StringProperty()     
      
-     volum_energy_density = FloatProperty()  # The unit of volumetric energy density is Wh/kg
-     gravi_energy_density = FloatProperty()  # The unit of gravimetric energy density is Wh/kg
-     young_modulus = FloatProperty()   # The unit is GPa, 1MPa = 0.001GPa
-     echem_stablity_window = FloatProperty()  # The unit is V
+     volum_energy_density = FloatProperty(help_text="The unit is Wh/kg.")  # The unit of volumetric energy density is Wh/kg
+     gravi_energy_density = FloatProperty(help_text="The unit is Wh/kg.")  # The unit of gravimetric energy density is Wh/kg
+     young_modulus = FloatProperty(help_text="The unit is GPa.")   # The unit is GPa, 1MPa = 0.001GPa
+     echem_stablity_window = FloatProperty(help_text="The unit is V.")  # The unit is V
      synthesis_steps = ArrayProperty(base_property=StringProperty(), help_text="The operation uids to synthesize the electrolyte.")
      
      precursor = RelationshipTo("Precursor", "Needed")
      systhesis_operation = RelationshipTo("SynthesisOperation", "Systhesis_with")
      conductiviy = RelationshipTo("Conductiviy", "Owned")     # Define outgoing relationships. This indicates that the current node has a relationship pointing to another node.
      reference = RelationshipTo("Reference", "Presented_BY")
+     battery = RelationshipTo("Battery", "Used_for")
      
 
 class Precursor(ChemNode):
@@ -47,7 +54,7 @@ class Precursor(ChemNode):
      electrolyte = RelationshipFrom("Electrolyte", "Needed_BY")
 
 
-class Catelyst(ChemNode):
+class Catalyst(ChemNode):
      chem_function = StringProperty() 
 
      precursor = RelationshipTo("Precursor", "React_for")
@@ -166,7 +173,7 @@ def export_json_template(save_path):
      if not os.path.exists(save_path):
           os.makedirs(save_path)
      
-     node_clsname = ["Electrolyte", "Precursor", "Catelyst", "Conductiviy", "CrystalStructure", "SpaceGroup", "ReactionDevice", "ReactionCondition", "SynthesisOperation", "Reference"]
+     node_clsname = ["Battery", "Electrolyte", "Precursor", "Catelyst", "Conductiviy", "CrystalStructure", "SpaceGroup", "ReactionDevice", "ReactionCondition", "SynthesisOperation", "Reference"]
      
      for clsname in node_clsname:
           node_class = globals()[clsname]
@@ -260,7 +267,7 @@ def update_relationships(json_file):
 if __name__ == '__main__':
      save_dir='json_template'
      save_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), save_dir)
-     # export_json_template(save_path)
+     export_json_template(save_path)
 
-     json_file = os.path.join(save_path, 'Electrolyte_template.json')
-     init_node(json_file)
+     # json_file = os.path.join(save_path, 'Electrolyte_template.json')
+     # init_node(json_file)

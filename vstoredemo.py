@@ -79,6 +79,7 @@ def create_nodes_and_relationships(data):
 
 # clear_nodes()
 
+
 create_nodes_and_relationships(data[0]) 
 with open("archive/sample_2.json") as user_file:
 # with open("archive/arxiv-metadata-oai-snapshot.json") as user_file:

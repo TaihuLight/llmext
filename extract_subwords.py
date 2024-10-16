@@ -26,6 +26,7 @@ import nltk, json, csv
 import re
 from absl import flags
 from itertools import groupby
+from files_op import read_files
 
 try:
   # Check if NLTK resources are available
@@ -101,6 +102,7 @@ def getRemovedMDwithnknlp(md_path, rm_duplicates = True):
               unique_list.append(item)
       list_subwords = unique_list
 
+    print("Total number of extraced subwords:", len(list_subwords))
     return list_subwords
     
 
@@ -238,12 +240,15 @@ if __name__ == '__main__':
     str2 = "In recent years, with rapid spread of information-related equipment or communication equipment such as PCs, video cameras, mobile phones, etc., development of a battery."
         
     txtpdf_file = "./data/US20180069262A.txt" 
-    txtpdf_file = "./archive/A Dynamically Stable Sulfide Electrolyte Architecture for High‐Performance All‐Solid‐State Lithium Metal Batteries.md"
-    # txtpdf_file = "./archive/Universal Solution Synthesis of Sulfide Solid Electrolytes Using Alkahest for All‐Solid‐State Batteries.md"     
-    list_subwords = getRemovedMDwithnknlp(txtpdf_file, False)
-    print(list_subwords)
-    print("Total number of subwords:", len(list_subwords))
-    save_csv_file(list_subwords, txtpdf_file[:-3]+'.csv')
+
+    paper_mdifles = read_files("./archive", ".md")
+    for paper_md in paper_mdifles:
+        list_subwords = getRemovedMDwithnknlp(paper_md, False)
+        save_csv_file(list_subwords, paper_md[:-3]+'.csv')
+        
+        list_subwords = getRemovedMDwithnknlp(paper_md, True)
+        save_csv_file(list_subwords, paper_md[:-3]+'_rmd.csv')
+
 
     # retrieve_entities("electrolyte")
     # test_embeddings()
