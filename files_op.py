@@ -1,4 +1,6 @@
 import os
+import bibtexparser
+from hub_entity import Reference
 
 # Read all the .md files in a directory
 def read_files(direct= './archive', ext='.md'):
@@ -16,7 +18,30 @@ def read_files(direct= './archive', ext='.md'):
 
 
 
+# Read a bibtex file to generate a json file for a reference entity
+def bib2json(bibfile):
+    with open(bibfile, 'r') as bibtex_file:
+        bib_database = bibtexparser.load(bibtex_file)
 
+    # Extract key information
+    entries = []
+
+    node_reference = globals()['Reference']
+    for att_array in node_class.__all_properties__: 
+          attr = att_array[0]
+          property_obj = getattr(node_class, attr)
+
+
+    for entry in bib_database.entries:
+        entry_info = {
+            'key': entry.get('ID'),
+            'title': entry.get('title'),
+            'author': entry.get('author'),
+            'year': entry.get('year')
+        }
+        entries.append(entry_info)
+    
+    return entries
 
 
 if __name__ == '__main__':

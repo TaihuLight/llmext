@@ -102,7 +102,7 @@ class ReactionDevice(ExperimentNode):
 # Reaction Condition such as Temperature, Pressure, etc
 class ReactionCondition(ExperimentNode):  
     rule = StringProperty(help_text="The detailed description of this condition.") 
-    temperature = FloatProperty(help_text="The unit is centigrade (°C).")
+    temperature = ArrayProperty(base_property=FloatProperty(), help_text="[23.6] or [23.6, 58.9]. Its unit is centigrade (°C).")
     reaction_time = StringProperty(help_text="Unit is hour(h), minute(min), second(s), millisecond(ms), etc.")
     
 
