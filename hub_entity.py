@@ -3,6 +3,12 @@ from neomodel import StructuredNode, FloatProperty, IntegerProperty, DateTimePro
 import json, os, ast
 from datetime import datetime
 
+"""
+Rules:
+- nodeid: [lowercase of class name]-[developer_name(lifd)]-[date(20241017)]-[index(3 numbers)], where the abbreviation of class name is shown as the comment of the class,
+  deveper_name is the abbreviation of the developer's name such as lifd coming from lifada.
+"""
+
 def setup_neo4j(database_name = 'neo4j'):
      config.DATABASE_URL = 'bolt://neo4j:19841124@103.6.49.76:7687'
      config.DATABASE_NAME = database_name
@@ -11,7 +17,7 @@ def setup_neo4j(database_name = 'neo4j'):
 
 # Chemistry Entity such as Electrolyte, Precursor, Catalyst
 class ChemNode(StructuredNode):
-     nodeid = StringProperty(unique_index=True, required=True)
+     nodeid = StringProperty(unique_index=True, required=True)  # The unique identifier of the entity
      name = StringProperty(required=True)
      alias = ArrayProperty(base_property=StringProperty())
      chem_formula = StringProperty(help_text="The chemical formula of the entity.")
@@ -42,7 +48,7 @@ class Electrolyte(ChemNode):
      
      precursor = RelationshipTo("Precursor", "Needed")
      systhesis_operation = RelationshipTo("SynthesisOperation", "Systhesis_with")
-     conductiviy = RelationshipTo("Conductiviy", "Owned")     # Define outgoing relationships. This indicates that the current node has a relationship pointing to another node.
+     Conductivity = RelationshipTo("Conductivity", "Owned")     # Define outgoing relationships. This indicates that the current node has a relationship pointing to another node.
      reference = RelationshipTo("Reference", "Presented_BY")
      battery = RelationshipTo("Battery", "Used_for")
      
@@ -61,7 +67,7 @@ class Catalyst(ChemNode):
      reference = RelationshipTo("Reference", "Presented_BY")
 
 
-class Conductiviy(StructuredNode):
+class Conductivity(StructuredNode):
      entid = StringProperty(unique_index=True, required=True)
      value = FloatProperty(required=True, help_text="The unit is Siemens per meter (S/m)")
      temperature = FloatProperty(help_text="The unit is centigrade (°C). The temperature at which the conductivity was measured")
@@ -173,7 +179,7 @@ def export_json_template(save_path):
      if not os.path.exists(save_path):
           os.makedirs(save_path)
      
-     node_clsname = ["Battery", "Electrolyte", "Precursor", "Catalyst", "Conductiviy", "CrystalStructure", "SpaceGroup", "ReactionDevice", "ReactionCondition", "SynthesisOperation", "Reference"]
+     node_clsname = ["Battery", "Electrolyte", "Precursor", "Catalyst", "Conductivity", "CrystalStructure", "SpaceGroup", "ReactionDevice", "ReactionCondition", "SynthesisOperation", "Reference"]
      
      for clsname in node_clsname:
           node_class = globals()[clsname]
