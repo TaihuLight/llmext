@@ -32,7 +32,11 @@ def bib2json(bibfile):
             if attr == "type":
                 properties[attr] = entry.get('ENTRYTYPE')
             elif attr == "authors":
-                properties[attr] = entry.get('author')
+                # Split the string on " and "
+                authors_list = entry.get('author').split(" and ")
+                # Clean up each part and format the output
+                properties[attr] = [author.replace(',', '').strip() for author in authors_list]
+                print(properties[attr])
             elif attr == "published_name":
                 properties[attr] = entry.get('journal')
             elif attr == "published_date":

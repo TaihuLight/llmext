@@ -49,18 +49,18 @@ class Electrolyte(ChemNode):
      echem_stablity_window = FloatProperty(help_text="The unit is V.")  # The unit is V
      synthesis_steps = ArrayProperty(base_property=StringProperty(), help_text="The operation uids to synthesize the electrolyte.")
      
-     precursor = RelationshipTo("Precursor", "Needed")
+     precursor = RelationshipTo("Precursor", "Need")
      systhesis_operation = RelationshipTo("SynthesisOperation", "Systhesis_with")
-     Conductivity = RelationshipTo("Conductivity", "Owned")     # Define outgoing relationships. This indicates that the current node has a relationship pointing to another node.
+     Conductivity = RelationshipTo("Conductivity", "Own")     # Define outgoing relationships. This indicates that the current node has a relationship pointing to another node.
      reference = RelationshipTo("Reference", "Presented_BY")
-     battery = RelationshipTo("Battery", "Used_for")
+     battery = RelationshipTo("Battery", "Use_for")
      
 
 class Precursor(ChemNode):
      chem_function = StringProperty()
 
      catalyst = RelationshipFrom("Catalyst", "React_with")
-     electrolyte = RelationshipFrom("Electrolyte", "Needed_BY")
+     electrolyte = RelationshipFrom("Electrolyte", "Need_BY")
 
 
 class Catalyst(ChemNode):
@@ -75,7 +75,7 @@ class Conductivity(StructuredNode):
      value = FloatProperty(required=True, help_text="The unit is Siemens per meter (S/m)")
      temperature = FloatProperty(help_text="The unit is centigrade (°C). The temperature at which the conductivity was measured")
 
-     electrolyte = RelationshipTo("Electrolyte", "Owned_BY")
+     electrolyte = RelationshipTo("Electrolyte", "Own_BY")
 
 
 class CrystalStructure(StructuredNode):
@@ -114,8 +114,8 @@ class SynthesisOperation(ExperimentNode):
      operation_detail = StringProperty(help_text="The detailed description of this operation.")
 
      precursor = RelationshipTo("Precursor", "Operation_used")
-     reaction_condition = RelationshipTo("ReactionCondition", "Performed_with")
-     reaction_device = RelationshipTo("ReactionDevice", "Performed_with")
+     reaction_condition = RelationshipTo("ReactionCondition", "Perform_with")
+     reaction_device = RelationshipTo("ReactionDevice", "Operate_with")
      next_operation = RelationshipTo("SynthesisOperation", "Next") 
      electrolyte = RelationshipFrom("Electrolyte", "Systhesis_target") 
     
