@@ -1,4 +1,3 @@
-json_template/Conductiviy_template.json
 json_template/CrystalStructure_template.json
 json_template/Electrolyte_template.json
 json_template/Precursor_template.json
@@ -34,3 +33,7 @@ archive/A Versatile Sn‐Substituted Argyrodite Sulfide Electrolyte for All‐So
 archive/A Versatile Sn‐Substituted Argyrodite Sulfide Electrolyte for All‐Solid‐State Li Metal Batteries.csv
 archive/A Versatile Sn‐Substituted Argyrodite Sulfide Electrolyte for All‐Solid‐State Li Metal Batteries.md
 json_template/Catalyst_template.json
+json_template/Conductivity_template.json
+data/pericles_1614684012.bib
+data/Reference.json
+__pycache__/hub_entity.cpython-39.pyc

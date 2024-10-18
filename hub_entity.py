@@ -5,8 +5,10 @@ from datetime import datetime
 
 """
 Rules:
-- nodeid: [lowercase of class name]-[developer_name(lifd)]-[date(20241017)]-[index(3 numbers)], where the abbreviation of class name is shown as the comment of the class,
+- The property "nodeid" is in the format of [Uppercase of the abbreviation of class name]-[developer_name(lifd)]-[date(20241017)]-[index(3 numbers)], where the abbreviation of class name is shown as the comment of the class,
   deveper_name is the abbreviation of the developer's name such as lifd coming from lifada.
+- Multiple instances of the same entity have different nodeid, but stored in a same JSON file.
+- null is used to indicate that a property is not avaiable.
 """
 
 def setup_neo4j(database_name = 'neo4j'):
@@ -34,6 +36,7 @@ class Battery(ExperimentNode):
     subcategory = StringProperty(help_text="The subcategory of this type of battery.")
     feature = StringProperty(help_text="The detailed feature of this type of battery.")
     electrolyte = RelationshipFrom("Electrolyte", "Make_by")
+
 
 
 class Electrolyte(ChemNode): 
@@ -178,7 +181,8 @@ def generate_json_template(node_class):
 def export_json_template(save_path):
      if not os.path.exists(save_path):
           os.makedirs(save_path)
-     
+     # BTY-Battery, ELT-Electrolyte, PRC-Precursor, CTY-Catalyst, CDT-Conductivity, CYS-CrystalStructure, SGP-SpaceGroup
+     # RTD-ReactionDevice, RTC-ReactionCondition, SOP-SynthesisOperation, REF-Reference
      node_clsname = ["Battery", "Electrolyte", "Precursor", "Catalyst", "Conductivity", "CrystalStructure", "SpaceGroup", "ReactionDevice", "ReactionCondition", "SynthesisOperation", "Reference"]
      
      for clsname in node_clsname:
@@ -186,7 +190,7 @@ def export_json_template(save_path):
           # Generate and print the JSON template for the Person class
           json_template = generate_json_template(node_class)
           print(json_template)
-          # Write to a file
+          # Write to a JSON file
           with open(os.path.join(save_path, f'{clsname}_template.json'), 'w', encoding='utf-8') as json_file:
                json_file.write(json_template)
 
