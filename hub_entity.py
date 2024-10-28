@@ -26,13 +26,13 @@ class ChemNode(StructuredNode):
 
 
 # Experiment Node such as device, operations, etc
-class ExperimentNode(StructuredNode):
+class BaseNode(StructuredNode):
      nodeid = StringProperty(unique_index=True, required=True)
      name = StringProperty(required=True)
      alias = ArrayProperty(base_property=StringProperty())
 
 
-class Battery(ExperimentNode): 
+class Battery(BaseNode): 
     subcategory = StringProperty(help_text="The subcategory of this type of battery.")
     feature = StringProperty(help_text="The detailed feature of this type of battery.")
     electrolyte = RelationshipFrom("Electrolyte", "Make_by")
@@ -96,19 +96,19 @@ class SpaceGroup(StructuredNode):
     crystal_structure = RelationshipFrom("CrystalStructure", "Belong_to")
     
 
-class ReactionDevice(ExperimentNode): 
+class ReactionDevice(BaseNode): 
     function = StringProperty(help_text="The detailed function of this device.")
 
 
 # Reaction Condition such as Temperature, Pressure, etc
-class ReactionCondition(ExperimentNode):  
+class ReactionCondition(BaseNode):  
     rule = StringProperty(help_text="The detailed description of this condition.") 
     temperature = ArrayProperty(base_property=FloatProperty(), help_text="[23.6] or [23.6, 58.9]. Its unit is centigrade (°C).")
     reaction_time = StringProperty(help_text="Unit is hour(h), minute(min), second(s), millisecond(ms), etc.")
     
 
 # Synthesis Operation such as Mixing, Heating, etc
-class SynthesisOperation(ExperimentNode):  
+class SynthesisOperation(BaseNode):  
      operation_detail = StringProperty(help_text="The detailed description of this operation.")
 
      precursor = RelationshipTo("Precursor", "Operation_used")
