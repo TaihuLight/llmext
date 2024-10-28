@@ -1,4 +1,4 @@
-import os, json
+import os, json, re
 import bibtexparser
 from hub_entity import Reference
 
@@ -22,9 +22,8 @@ def read_files(direct= './archive', ext='.md'):
 def bib2json(bibfile):
     with open(bibfile, 'r') as bibtex_file:
         bib_database = bibtexparser.load(bibtex_file)
-
-    # Extract key information
-    properties = {}
+    
+    properties = {}  # Extract key information
     node_reference = globals()['Reference']
     for att_array in node_reference.__all_properties__: 
             attr = att_array[0]
@@ -39,6 +38,10 @@ def bib2json(bibfile):
                 print(properties[attr])
             elif attr == "published_name":
                 properties[attr] = entry.get('journal')
+            elif attr == "doi":                
+                doi_pattern = r'10\.\d{4,9}/[-._;()/:A-Z0-9]+'    # Regular expression pattern for DOI
+                doi_match = re.search(doi_pattern, entry.get('doi'), re.IGNORECASE)                
+                properties[attr] = doi_match.group(0) if doi_match else None
             elif attr == "published_date":
                 properties[attr] = entry.get('year')
             else:

@@ -38,7 +38,6 @@ class Battery(ExperimentNode):
     electrolyte = RelationshipFrom("Electrolyte", "Make_by")
 
 
-
 class Electrolyte(ChemNode): 
      subcategory = StringProperty()
      feature = StringProperty()     
@@ -47,10 +46,9 @@ class Electrolyte(ChemNode):
      gravi_energy_density = FloatProperty(help_text="The unit is Wh/kg.")  # The unit of gravimetric energy density is Wh/kg
      young_modulus = FloatProperty(help_text="The unit is GPa.")   # The unit is GPa, 1MPa = 0.001GPa
      echem_stablity_window = FloatProperty(help_text="The unit is V.")  # The unit is V
-     synthesis_steps = ArrayProperty(base_property=StringProperty(), help_text="The operation uids to synthesize the electrolyte.")
      
      precursor = RelationshipTo("Precursor", "Need")
-     systhesis_operation = RelationshipTo("SynthesisOperation", "Systhesis_with")
+     synthesis_operation = RelationshipTo("SynthesisOperation", "Synthesis_with")
      Conductivity = RelationshipTo("Conductivity", "Own")     # Define outgoing relationships. This indicates that the current node has a relationship pointing to another node.
      reference = RelationshipTo("Reference", "Presented_BY")
      battery = RelationshipTo("Battery", "Use_for")
@@ -117,7 +115,7 @@ class SynthesisOperation(ExperimentNode):
      reaction_condition = RelationshipTo("ReactionCondition", "Perform_with")
      reaction_device = RelationshipTo("ReactionDevice", "Operate_with")
      next_operation = RelationshipTo("SynthesisOperation", "Next") 
-     electrolyte = RelationshipFrom("Electrolyte", "Systhesis_target") 
+     electrolyte = RelationshipFrom("Electrolyte", "Synthesis_target") 
     
 
 class Reference(StructuredNode):
