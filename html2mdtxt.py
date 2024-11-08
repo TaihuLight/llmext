@@ -17,7 +17,7 @@ from doi2bibtex.resolve import resolve_doi
 import json, warnings
 
 
-warnings.filterwarnings('ignore')
+# warnings.filterwarnings('ignore')
 def get_mate_item(bs, attrs_value='dc.title'):
     # Find the meta tag with name "dc.title"
     meta_tag = bs.find('meta', attrs={'name': attrs_value})
@@ -91,7 +91,6 @@ def get_bib_doi(bs, store_dir, cls_name='Reference', contain_affiliation=False):
             authors_list = bib_info.get('author').split(" and ")
             # Clean up each part and format the output
             properties[attr] = [author.replace(',', '').strip() for author in authors_list]
-            print(properties[attr])
         elif attr == "affiliations":
             properties[attr] = bib_info.get('citation_author_institution')
         elif attr == "published_name":
@@ -164,7 +163,7 @@ def extract_artical(html_file_path, store_dir):
                     # pass                
 
         # Find the div with the specific class and remove its contents
-        remove_divs = ['loa-wrapper loa-authors hidden-xs desktop-authors', 'c-article-section__figure-description', 'authorInformationSection', 'article__copy', 'ack', 'c-article-equation', 'c-article-equation__content']
+        remove_divs = ['inline-equation', 'c-article-section__figure-description', 'authorInformationSection', 'article__copy', 'ack', 'c-article-equation', 'c-article-equation__content']
         for rm_div in remove_divs:
             for dese_div in desc.find_all('div', class_=rm_div):         
                 dese_div.replace_with(" ")
@@ -183,7 +182,7 @@ def extract_artical(html_file_path, store_dir):
         extract_tags =  ['sub', 'i', 'sup']
         for ext_tag in extract_tags:
             for a_tag in desc.find_all(ext_tag): 
-                if ext_tag is 'sup' and (a_tag.get_text() in ['[',']'] or a_tag.find('a') is not None):
+                if ext_tag == 'sup' and (a_tag.get_text() in ['[',']'] or a_tag.find('a') is not None):
                     a_tag.extract()
                 else:
                     a_tag.replace_with(a_tag.text)
@@ -220,8 +219,8 @@ def extract_artical(html_file_path, store_dir):
         file.write(str(markdown_content))
 
 # (2) html2text
-    with open("tmp.html", "w") as file:
-        file.write(artical_date)
+#     with open("tmp.html", "w") as file:
+#         file.write(artical_date)
 
 #   strip_markdown.strip_markdown_file(store_dir)  # Converts markdown to plain text
     textfile = join(store_dir, artical_title + ".txt")    
@@ -244,5 +243,5 @@ if __name__ == "__main__":
     # Print the paths of all .html files
     for html_file in html_files:
         if os.path.isfile(html_file):
-            extract_artical(html_file, join(current_dir, 'rstdir'))
+            extract_artical(html_file, join(current_dir, 'mdtext'))
 
