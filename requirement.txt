@@ -3,4 +3,8 @@ llama_index.embeddings.huggingface
 llama_index.postprocessor
 peft
 bibtexparser
+
+
 neomodel
+markdownify
+doi2bibtex
