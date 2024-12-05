@@ -3,6 +3,7 @@ Extract experimental describtion from the HTML file and convert it to markdown a
 
 Used Libraries:
 [markdownify] https://pypi.org/project/markdownify/
+[pip install markdown-it-py mdit_plain] https://github.com/executablebooks/markdown-it-py
 [doi2bibtex] https://github.com/timothygebhard/doi2bibtex
 
 @author: LIAO LONGLONG 2024-11-8
@@ -11,6 +12,8 @@ Used Libraries:
 import glob, os, re
 from os.path import join
 from bs4 import BeautifulSoup
+from markdown_it import MarkdownIt
+from mdit_plain.renderer import RendererPlain
 from markdownify import MarkdownConverter   # Convert HTML to markdown, see https://github.com/AI4WA/Docs2KG
 from neomodel import StructuredNode, StringProperty, ArrayProperty, DateTimeProperty
 from doi2bibtex.resolve import resolve_doi
@@ -210,12 +213,16 @@ def extract_artical(html_file_path, store_dir):
 # (1) html2Markdown
     # Create a new BeautifulSoup object from the modified HTML content
     extract_html = BeautifulSoup(artical_date, 'html.parser')
+    # markdown_content = md(desc, strong_em_symbol="", escape_misc=False)  # Convert HTML to markdown
+    markdown_content = MarkdownConverter(strip=['img', 'figure', 'ol'], strong_em_symbol="", escape_misc=False).convert_soup(extract_html)
+    markdown_content = re.sub(r'\n', '\n\n', str(markdown_content))
+    markdown_content = re.sub(r'\n\s*\n', '\n\n', str(markdown_content))   # Merge consecutive empty lines into a single empty line
+
+    md_parser = MarkdownIt(renderer_cls=RendererPlain)
+    text_content = md_parser.render(markdown_content)
+
     mdfile = join(store_dir, artical_title + ".md")
     with open(mdfile, "w") as file:
-        # markdown_content = md(desc, strong_em_symbol="", escape_misc=False)  # Convert HTML to markdown
-        markdown_content = MarkdownConverter(strip=['img', 'figure', 'ol'], strong_em_symbol="", escape_misc=False).convert_soup(extract_html)
-        markdown_content = re.sub(r'\n', '\n\n', str(markdown_content))
-        markdown_content = re.sub(r'\n\s*\n', '\n\n', str(markdown_content))   # Merge consecutive empty lines into a single empty line
         file.write(str(markdown_content))
 
 # (2) html2text
@@ -225,7 +232,7 @@ def extract_artical(html_file_path, store_dir):
 #   strip_markdown.strip_markdown_file(store_dir)  # Converts markdown to plain text
     textfile = join(store_dir, artical_title + ".txt")    
     with open(textfile, "w") as file:
-        file.write(str(markdown_content))
+        file.write(text_content)
 
 
 if __name__ == "__main__": 
@@ -236,7 +243,7 @@ if __name__ == "__main__":
     dir_path = join(current_dir, 'sulfideSSE', jounal_name[0]) 
     html_files = glob.glob(join(dir_path, '*.html'), recursive=True)
 
-# Use glob to find all .html files
+    # Use glob to find all .html files
     dir_path = join(current_dir, 'sulfideSSE')     
     html_files = glob.glob(join(dir_path, '*', '*.html'), recursive=True)    
 
@@ -244,4 +251,3 @@ if __name__ == "__main__":
     for html_file in html_files:
         if os.path.isfile(html_file):
             extract_artical(html_file, join(current_dir, 'mdtext'))
-

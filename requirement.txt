@@ -4,6 +4,10 @@ llama_index.postprocessor
 peft
 bibtexparser
 
+absl-py
+langchain_community
+unstructured
+flash-attn
 
 neomodel
 markdownify

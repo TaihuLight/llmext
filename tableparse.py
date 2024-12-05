@@ -39,10 +39,8 @@ warnings.filterwarnings('ignore')
 # model_config = ConfigDict() 
 # model_config['protected_namespaces'] = ()
 
-# Using 01.AI API for embeddings/llms
-# llm_model = llm_hgface_llamaindex("Qwen/Qwen2-7B-Instruct")
-# llm_model = llm_hgface_llamaindex("Qwen/Qwen2.5-7B-Instruct")
-llm_model = llm_hgface_llamaindex("meta-llama/Meta-Llama-3-8B-Instruct")
+llm_model = llm_hgface_llamaindex("Qwen/Qwen2.5-7B-Instruct")
+# llm_model = llm_hgface_llamaindex("meta-llama/Meta-Llama-3-8B-Instruct")
 # llm_model = Qwen2()
 embed_model = embed_model()
 
@@ -122,7 +120,6 @@ def getRemovedMD(query_prompt):
 
 
 
-
 if __name__ == '__main__':
     query = "Extract the name of the electrolyte synthesised in Example 1 and its proportaion (do not change numerical precision) of elements may be shown in a Table (include +/-). The electrolyte is represented by a dictionary whose keys are the elements present in the electrolyte and the values are their proportions."
     query = "Extract the name of the electrolyte synthesised in the first example (e.g., Example 1) and its proportion (do not change numerical precision) of elements, which may be shown in a Table (include +/-) or in context. The electrolyte is represented by a dictionary whose keys are the elements present in the electrolyte and the values are their proportions."
@@ -148,5 +145,5 @@ if __name__ == '__main__':
     query_extract = "Extract subwords (or phrases) from the above text and count their number using the following steps: (1) Identify and Replace Words: Replace prepositions, verbs, adverbs, pronouns, adpositions, conjunctions, and words expressing quantity with commas. (2) Extract Subwords: Split the modified text by commas and directly output these extracted words in order they appear in the original text. Then, count the resulting phrases."
     
     txtpdf_file = "./US20180069262A.txt"  
-    # getRemovedMD(query_extract)
+    getRemovedMD(query_extract)
     

@@ -6,7 +6,7 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 import os
 from huggingface_hub import login
 
-# Change the default cache dir for "/tmp/llama_index"
+# Change the default cache dir
 os.environ["LLAMA_INDEX_CACHE_DIR"]  = "/home/xieyi/raid/llama_index"
 # To configure where huggingface_hub will locally store data. In particular, your token and the cache will be stored in this folder.
 os.environ["HF_HOME"] = "/home/xieyi/raid/huggingface"
@@ -23,20 +23,26 @@ def embed_model(modelname = "BAAI/bge-large-en-v1.5"):
     return embed_model
 
 
+def OpenAI_GPT(modelname = "gpt-4o-mini-2024-07-18"):    
+    from llama_index.llms.openai import OpenAI    
+    # Using OpenAI API for embeddings/llms
+    os.environ["OPENAI_API_KEY"] = "sk-None-mslviIwx9iAqddBJqvLbT3BlbkFJYjb3C6AIu1bTt1GmJpvp"   
+    llm_model = OpenAI(model=modelname, temperature=0.8, max_tokens=2048)
+
+    return llm_model
+
+
 def Qwen():
     return DashScope(model_name=DashScopeGenerationModels.QWEN_TURBO, api_key="sk-a24c579290f74665a3653bfdc5050098")
 
 
 def Qwen2():
     QWEN_API_KEY = "sk-a24c579290f74665a3653bfdc5050098"
-    API_KEY = "37cd3e06d9754653910c7bce12ff5d61"
-    # llm = OpenAILike(api_base="https://api.01.ai/v1", api_key=API_KEY, model="yi-large",  is_chat_model=True)
-
     llm = OpenAILike(api_base="https://dashscope.aliyuncs.com/compatible-mode/v1", api_key=QWEN_API_KEY, model="qwen2-72b-instruct",  is_chat_model=True, tool_choice="none")
     return llm
 
 
-def llm_hgface_llamaindex(llm_name = "Qwen/Qwen2-72B-Instruct"):
+def llm_hgface_llamaindex(llm_name = "Qwen/Qwen2.5-7B-Instruct"):
     #  login(token = token_huggingface)
      llm_model = HuggingFaceLLM(
           model_name=llm_name,
@@ -59,10 +65,3 @@ def Yi(modelname = "yi-large"):
     return OpenAILike(api_base="https://api.01.ai/v1", api_key=YIAI_KEY, model=modelname, is_chat_model=True, do_sample=False, temperature=0.0)
 
 
-def OpenAI_GPT(modelname = "gpt-4o-mini-2024-07-18"):    
-    from llama_index.llms.openai import OpenAI    
-    # Using OpenAI API for embeddings/llms
-    os.environ["OPENAI_API_KEY"] = "sk-None-mslviIwx9iAqddBJqvLbT3BlbkFJYjb3C6AIu1bTt1GmJpvp"   
-    llm_model = OpenAI(model=modelname, temperature=0.8, max_tokens=2048)
-
-    return llm_model

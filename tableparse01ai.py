@@ -60,7 +60,7 @@ def get_elements(txtpdf_file, query):
     nodes = node_parser.get_nodes_from_documents(docs)
     base_nodes, objects = node_parser.get_nodes_and_objects(nodes)
     print(objects[0].get_content())
-    # dump both indexed tables and page text into the vector index
+    # Dump both indexed tables and page text into the vector index
     recursive_index = VectorStoreIndex(nodes=base_nodes + objects + page_nodes, show_progress=False)
     # print(page_nodes[31].get_content())
 
